@@ -131,12 +131,90 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 20px;
   font-size: 0.8rem;
 }
 
 .content-header h2 {
   font-size: 1rem;
+}
+
+.show-more {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.projects {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  transition: all 0.3s linear;
+}
+
+.projects a {
+  text-decoration: none;
+  display: none;
+}
+
+.projects .visible {
+  display: block;
+}
+
+.project {
+  padding: 20px;
+  min-width: auto;
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.project-header h3 {
+  font-size: 0.9rem;
+}
+
+.project p {
+  font-size: 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-footer {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.project-footer div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  line-height: 24px;
+  margin-left: auto;
+  position: relative;
+}
+
+.language::before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e7de79;
+  border: 2px solid var(--text-color);
 }
 
 footer {
