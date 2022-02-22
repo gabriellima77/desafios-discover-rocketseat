@@ -1,0 +1,12 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  background-color: var(--body-bg-color);
+}
