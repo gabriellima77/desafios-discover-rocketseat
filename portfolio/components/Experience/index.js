@@ -12,8 +12,7 @@ const createXP = ({ name, time }) => {
   pName.textContent = name;
   pTime.textContent = time;
 
-  li.appendChild(pName);
-  li.appendChild(pTime);
+  li.append(pName, pTime);
   return li;
 };
 

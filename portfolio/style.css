@@ -9,4 +9,98 @@
   width: 100%;
   display: flex;
   background-color: var(--body-bg-color);
+  padding: 20px 20px 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+  padding: 0px 20px;
+}
+
+.side-card {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+  width: 100%;
+  min-width: 350px;
+  border-radius: 20px;
+  padding: 40px 20px;
+  background-color: var(--bg-cards);
+}
+
+.profile {
+  display: grid;
+  place-items: center;
+}
+
+.profile figure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.profile img {
+  width: 35%;
+  border-radius: 50%;
+  border: 2px solid #00ff00;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: flex;
+  gap: 1rem;
+  color: var(--text-color);
+  width: 100%;
+  background-color: var(--bg-cards);
+  font-style: normal;
+}
+
+.contact div {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.tecnology {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.tags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 0px 10px;
+}
+
+.tag {
+  background-color: var(--bg-techs);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.7rem;
+  padding: 5px 0;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  color: var(--text-color);
+  display: grid;
+  place-items: center;
+  background-color: var(--body-bg-color);
+  padding: 20px 0px;
 }

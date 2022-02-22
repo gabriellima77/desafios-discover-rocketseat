@@ -4,8 +4,9 @@ const createContact = ({ alt, icon, text, url }) => {
   const contactText = document.createElement('p');
 
   contanctIcon.src = icon + '.svg';
-  contanctIcon.alt = alt;
   contanctIcon.classList.add('contact-icon');
+  contanctIcon.textContent = alt;
+  contanctIcon.alt = alt;
 
   contactText.textContent = text;
   contactText.classList.add('contact-text');

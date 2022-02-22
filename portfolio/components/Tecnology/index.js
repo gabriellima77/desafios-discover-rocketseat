@@ -3,10 +3,10 @@ const tecnologies = [
   'CSS3',
   'JavaScript',
   'React',
-  'React-Native',
+  'React Native',
   'TypeScript',
-  'Next.js',
-  'Node.js',
+  'NextJs',
+  'NodeJs',
   'Git',
   'Python',
   'Figma',
@@ -20,10 +20,10 @@ const createTag = (text) => {
 };
 
 const putTecnology = () => {
-  const tecnology = document.querySelector('.tecnology');
+  const tags = document.querySelector('.tags');
   tecnologies.forEach((tec) => {
     const tag = createTag(tec);
-    tecnology.appendChild(tag);
+    tags.appendChild(tag);
   });
 };
 
