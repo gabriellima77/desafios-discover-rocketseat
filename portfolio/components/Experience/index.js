@@ -17,7 +17,7 @@ const createXP = ({ name, time }) => {
 };
 
 const putXp = () => {
-  const experience = document.querySelector('.experience');
+  const experience = document.querySelector('.list-xp');
   experiences.forEach((xp) => {
     const xpElement = createXP(xp);
     experience.appendChild(xpElement);

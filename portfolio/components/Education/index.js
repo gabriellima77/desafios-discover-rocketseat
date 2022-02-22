@@ -21,7 +21,7 @@ const createEducation = ({ name, time, text }) => {
 };
 
 const putEducation = ()=> {
-  const education = document.querySelector('.education');
+  const education = document.querySelector('.list-ed');
   educations.forEach(ed=> {
     const educationElement = createEducation(ed);
     education.appendChild(educationElement);
