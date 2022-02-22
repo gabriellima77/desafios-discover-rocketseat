@@ -20,6 +20,19 @@ aside {
   flex-direction: column;
   gap: 20px;
   padding: 0px 20px;
+  transition: all 0.3s linear;
+}
+
+.menu {
+  display: none;
+  left: 25px;
+  top: 50px;
+  position: absolute;
+  color: var(--text-color);
+  font-size: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .card {
@@ -223,4 +236,64 @@ footer {
   place-items: center;
   background-color: var(--body-bg-color);
   padding: 20px 0px;
+}
+
+@media screen and (max-width: 950px) {
+  .menu {
+    display: block;
+    transition: all 0.3s;
+  }
+
+  .menu.open {
+    left: 70px;
+  }
+
+  aside {
+    flex: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 0px;
+  }
+
+  aside.open {
+    flex: 1;
+    padding: 0px 20px;
+    overflow: initial;
+    height: auto;
+  }
+
+  main {
+    margin-left: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+  }
+
+  main.shrink {
+    flex: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+  }
+
+  .card {
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    margin-left: 20px;
+  }
+
+  .menu {
+    left: 15px;
+  }
+
+  .project {
+    max-width: 250px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }

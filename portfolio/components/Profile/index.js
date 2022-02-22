@@ -25,7 +25,6 @@ const getProfileContent = async (user) => {
     mode: 'cors',
   });
   const data = await response.json();
-  console.log(data);
   return filterProfileContent(data);
 };
 
